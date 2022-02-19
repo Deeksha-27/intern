@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment</title>
+        <style>
+            .credit-card {
+             width: 360px;
+             height: 400px;
+            }
+            h2,h3,h4{
+                font-size: 20;
+            }
+            h1{
+                font-size: 30;
+            }
+            
+
+        </style>
+        <script>
+          function add(){
+            var div1=document.getElementById("div2");
+            div1.innerHTML="<input type='text' placeholder='Enter amount'>";
+          }
+          function addd(){
+            var div4=document.getElementById("div3");
+            div4.innerHTML="<input type='text' placeholder='Enter amount'>";
+          }
+        </script>
+        <script>
+          function myfunction(){
+            alert("Payment done!!Registered successfully");
+          }
+        </script>
+    </head>
+    <body bgcolor="whitesmoke">
+        <h1 align="center" ><b>Payment Procedure</b></h1>
+        <h2>1.DEBIT CARD</h2>
+        <form class="credit-card">
+              <label>Debit card detail</label>
+              <div>
+              <input type="text" class="card-number" placeholder="XXXX XXXX XXXX XXXX">
+              <br>
+              <br>
+              <div>
+                  <lable>Expiration Date</lable>
+                <div class="month">
+                  <select name="Month">
+                    <option value="january">January</option>
+                    <option value="february">February</option>
+                    <option value="march">March</option>
+                    <option value="april">April</option>
+                    <option value="may">May</option>
+                    <option value="june">June</option>
+                    <option value="july">July</option>
+                    <option value="august">August</option>
+                    <option value="september">September</option>
+                    <option value="october">October</option>
+                    <option value="november">November</option>
+                    <option value="december">December</option>
+                  </select>
+                </div>
+                <br>
+                <div class="year">
+                  <select name="Year">
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                  <br>
+                <div>
+                  <input type="text" placeholder="CVV">
+                </div>
+                <p>(3 or 4 digits usually found <br> on the signature strip)</p>
+                </div>
+              </div>
+              <div id="div3"></div>
+              <input type="button" onclick="addd()" name="proceed" value="proceed"><br>
+
+              <input type="button" onclick="myfunction()" name="print" value="Pay">
+            </div>
+          </form>
+          <form>
+            <h2>2.CREDIT CARD</h2>
+            <br>
+            <form class="credit-card">
+                  <label>Credit card detail</label>
+                  <div>
+                  <input type="text" class="card-number" placeholder="XXXX XXXX XXXX XXXX">
+                  <br>
+                  <br>
+                  <div>
+                      <lable>Expiration Date</lable>
+                      <div class="month">
+                        <select name="Month">
+                          <option value="january">January</option>
+                          <option value="february">February</option>
+                          <option value="march">March</option>
+                          <option value="april">April</option>
+                          <option value="may">May</option>
+                          <option value="june">June</option>
+                          <option value="july">July</option>
+                          <option value="august">August</option>
+                          <option value="september">September</option>
+                          <option value="october">October</option>
+                          <option value="november">November</option>
+                          <option value="december">December</option>
+                        </select>
+                      </div>
+                      <br>
+                      <div class="year">
+                        <select name="Year">
+                          <option value="2016">2016</option>
+                          <option value="2017">2017</option>
+                          <option value="2018">2018</option>
+                          <option value="2019">2019</option>
+                          <option value="2020">2020</option>
+                          <option value="2021">2021</option>
+                          <option value="2022">2022</option>
+                          <option value="2023">2023</option>
+                          <option value="2024">2024</option>
+                        </select>
+                      </div>
+                    </div>
+                    
+                  <div>
+                      <br>
+                    <div>
+                      <input type="text" placeholder="CVV">
+                    </div>
+                    <p>(3 or 4 digits usually found <br> on the signature strip)</p>
+                    </div>
+                  </div>
+                  <div id="div2"></div>
+              <input type="button" onclick="add()" name="proceed" value="proceed"><br>
+
+                  <input type="button" onclick="myfunction()" name="pay" value="Pay">
+    
+                 
+                </div>
+              
+          </form>
+          <br>
+
+<h2>3.Gpay</h2>
+<p>scan the below QR code</p>
+<img src="C:\Users\diganth\Downloads\qr.png">
+<br>
+
+<input type="button" onclick="myfunction()" name="print" value="Pay">
+<br>
+
+</form>
+</body>
